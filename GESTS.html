@@ -159,16 +159,18 @@
             margin-bottom: 20px;
         }
 
-        .activities .download-link a {
+        .activities .download-link a, .activities .video-link a {
             padding: 10px 20px;
             background: #0066ff;
             color: white;
             border-radius: 5px;
             text-decoration: none;
             transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+            display: inline-block;
+            margin: 10px;
         }
 
-        .activities .download-link a:hover {
+        .activities .download-link a:hover, .activities .video-link a:hover {
             background: #000ce6;
             transform: scale(1.1);
             box-shadow: 0 4px 15px rgba(0, 140, 255, 0.5);
@@ -259,7 +261,6 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#activities">Activities</a></li>
                 <li><a href="#contact">Contact</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -286,9 +287,15 @@
     
     <section class="activities" id="activities">
         <h2>Activities</h2>
-        <p>Autobiography</p>
+        <p>AUTOBIOGRAPHY</p>
         <div class="download-link">
             <a href="documents/autobiography.pptx" download>Download My PPT</a>
+        </div>
+        &nbsp;
+        <p>THE
+            EVOLUTION OF INFORMATION TRANSMISSION</p>
+        <div class="video-link">
+            <a href="https://youtu.be/-vS3c5ApBJs?feature=shared" target="_blank">Video Presentation</a>
         </div>
     </section>
     
