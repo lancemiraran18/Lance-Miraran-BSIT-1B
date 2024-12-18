@@ -16,8 +16,8 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: #0d0d0d;
-            color: #fff;
+            background: #001f3f; /* Navy Blue */
+            color: #f5f5dc; /* Beige */
             line-height: 1.6;
         }
 
@@ -36,7 +36,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 20px;
-            background: #16191f;
+            background: #31475e; /* Navy Blue */
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -52,13 +52,13 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #f5f5dc; /* Beige */
             font-size: 1rem;
             transition: color 0.3s, transform 0.3s;
         }
 
         nav ul li a:hover {
-            color: #0400ff;
+            color: #FFD700; /* Gold */
             transform: scale(1.1);
         }
 
@@ -68,7 +68,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 40px 20px;
-            background: #16191f;
+            background: #001f3f; /* Navy Blue */
             flex-wrap: wrap;
             animation: fadeIn 1.5s ease-in-out;
         }
@@ -92,28 +92,30 @@
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: #eff4ff;
+            color: #f5f5dc; /* Beige */
         }
 
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 20px;
-            color: #ccc;
+            color: #e0e0d1; /* Light Beige */
         }
 
         .hero .buttons a {
             margin-right: 10px;
             padding: 10px 20px;
-            background: #00b7ff;
-            color: #fff;
+            background: #001f3f; /* Navy Blue */
+            color: #f5f5dc; /* Beige */
+            border: 2px solid #f5f5dc; /* Beige Border for better visibility */
             border-radius: 5px;
             transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
         }
 
         .hero .buttons a:hover {
-            background: #0045e6;
+            background: #FFD700; /* Gold */
+            color: #001f3f; /* Navy Blue Text */
             transform: scale(1.1);
-            box-shadow: 0 4px 15px rgba(0, 170, 255, 0.5);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
         }
 
         .hero img {
@@ -124,19 +126,19 @@
         /* About Section */
         .about {
             padding: 50px 20px;
-            background: #20232a;
+            background: #001f3f; /* Navy Blue */
             text-align: center;
         }
 
         .about h2 {
             font-size: 2.2rem;
             margin-bottom: 20px;
-            color: #dbdbdb;
+            color: #f5f5dc; /* Beige */
         }
 
         .about p {
             font-size: 1rem;
-            color: #ccc;
+            color: #e0e0d1; /* Light Beige */
             max-width: 800px;
             margin: 0 auto;
         }
@@ -144,19 +146,19 @@
         /* Activities Section */
         .activities {
             padding: 50px 20px;
-            background: #16191f;
+            background: #001f3f; /* Navy Blue */
             text-align: center;
         }
 
         .activities h2 {
             font-size: 2.2rem;
             margin-bottom: 20px;
-            color: #ffffff;
+            color: #f5f5dc; /* Beige */
         }
 
         .activities p {
             font-size: 1rem;
-            color: #ccc;
+            color: #e0e0d1; /* Light Beige */
             margin-bottom: 20px;
         }
 
@@ -166,50 +168,57 @@
 
         .activities .download-link a, .activities .video-link a {
             padding: 12px 25px;
-            background: #3498db;
-            color: white;
+            background: #001f3f; /* Navy Blue */
+            color: #f5f5dc; /* Beige */
+            border: 2px solid #f5f5dc; /* Beige Border */
             border-radius: 30px;
             font-size: 1rem;
             text-decoration: none;
             margin: 10px 15px; /* Adjust the margin for more gap between buttons */
-            transition: background 0.3s, transform 0.3s;
+            transition: background 0.3s, transform 0.3s, color 0.3s;
             display: inline-block;
         }
 
         .activities .download-link a:hover, .activities .video-link a:hover {
-            background: #2980b9;
+            background: #FFD700; /* Gold */
+            color: #001f3f; /* Navy Blue Text */
             transform: scale(1.1);
         }
 
         /* Contact Section */
         .contact {
             padding: 50px 20px;
-            background: #20232a;
+            background: #001f3f; /* Navy Blue */
             text-align: center;
         }
 
         .contact h2 {
             font-size: 2.2rem;
             margin-bottom: 20px;
-            color: #ffffff;
+            color: #f5f5dc; /* Beige */
         }
 
         .contact p {
             font-size: 1rem;
-            color: #ccc;
+            color: #e0e0d1; /* Light Beige */
             margin-bottom: 10px;
         }
 
         .contact a {
-            color: #fff;
+            color: #FFD700; /* Gold */
+            transition: color 0.3s;
+        }
+
+        .contact a:hover {
+            color: #f5f5dc; /* Beige */
         }
 
         /* Footer Section */
         footer {
-            background: #16191f;
+            background: #31475e; /* Navy Blue */
             padding: 20px;
             text-align: center;
-            color: #ccc;
+            color: #e0e0d1; /* Light Beige */
         }
 
         /* Responsive Design */
@@ -293,14 +302,32 @@
     
     <section class="activities" id="activities">
         <h2><i class="fas fa-tasks"></i> Activities</h2>
-        <p>AUTOBIOGRAPHY</p>
+        
         <div class="download-link">
-            <a href="AutoBiography.docx" download><i class="fas fa-download"></i> Download My DOCX</a>
+            <a href="AutoBiography.docx" download><i class="fas fa-download"></i> Autobiography</a>
+            <p>AUTOBIOGRAPHY DOCX</p>
         </div>
-        &nbsp;
-        <p>THE EVOLUTION OF INFORMATION TRANSMISSION</p>
+        
         <div class="video-link">
             <a href="https://youtu.be/-vS3c5ApBJs?feature=shared" target="_blank"><i class="fas fa-video"></i> Video Presentation</a>
+            <p>THE EVOLUTION OF INFORMATION TRANSMISSION</p>
+        </div>
+        
+        <div class="video-link">
+            <a href="The-Inca-Civilization-Legacy-of-Innovation.pptx" target="_blank"><i class="fas fa-book"></i> Inca Civilization Presentation</a>
+            <p>INCA CIVILIZATION REPORT PPTX</p>
+        </div>
+        <div class="video-link">
+            <a href="Environmental-Impacts-of-Agriculture-Balancing-Growth-with-Sustainability.pptx" target="_blank"><i class="fas fa-book"></i> Ariculture Presentation</a>
+            <p><b>INVIRONMENTAL IMPACTS OF AGRICULTURE & WAYS TO MIGRATE IT'S EFFECT</b> REPORT PPTX</p>
+        </div>
+        <div class="video-link">
+            <a href="https://sg.docs.wps.com/module/common/loadPlatform/?sa=601.1123&fbclid=IwZXh0bgNhZW0CMTEAAR19ISkqROr_sv9I8Qbvnw-2hhVPNlsEI1sPK4JAA4PPHQ_WW_XSzr4A34w_aem_MhZvBSxkircPR_ILCtQbkg&sid=sIO2YoKmZAdPgiLsG&v=v2" target="_blank"><i class="fa fa-pen"></i> Reflection</a>
+            <p>REFLECTION ON IROBOT</p>
+        </div>
+        <div class="video-link">
+            <a href="https://sg.docs.wps.com/module/common/loadPlatform/?sa=601.1123&fbclid=IwZXh0bgNhZW0CMTEAAR1T3M5V24OEvNF0Yhg423Gc9Hd2iXT13lDmFZ5uFxEjNkibtK0ogp1fFQM_aem_hK139EqKR-YgZVjkox-kRA&sid=sIHuYoKmZAa6dtLoG&v=v2" target="_blank"><i class="fas fa-drafting-compass"></i> Blueprint</a>
+            <p>BLUEPRINT OF SMARTGLASSES</p>
         </div>
     </section>
     
